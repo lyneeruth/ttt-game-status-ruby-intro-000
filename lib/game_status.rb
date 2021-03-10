@@ -21,7 +21,7 @@ return win_combination
 end
 
 def full?(board)
-  if board.all? do [value]
+  full_value = board.all? do [value]
   value == "X" || value == "O"
   return true
 end
