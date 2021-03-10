@@ -49,4 +49,3 @@ def winner(board)
   end
   return "O"
 end
-end
