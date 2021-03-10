@@ -40,7 +40,8 @@ end
 
 def winner(board)
   winning_combination = won?(board)
-  if winning_combination[0] == "X"
+  winning_space = winning_combination[0] 
+  if board[winning_space] == "X"
     return "X"
   end
   return "0"
