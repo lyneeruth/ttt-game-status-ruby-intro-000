@@ -21,11 +21,7 @@ return win_combination
 end
 
 def full?(board)
-  full_value = board.all? do [value]
-  value == "X" || value == "O"
-  return true
-end
-end
-  return false
+  full_value = board.all? { |value| value == "X" || value == "O"}
+  return full_value
 end
   
