@@ -39,10 +39,14 @@ def over?(board)
 end 
 
 def winner(board)
+  if draw?(board)
+    return false
+  else
   winning_combination = won?(board)
   winning_space = winning_combination[0] 
   if board[winning_space] == "X"
     return "X"
   end
   return "O"
+end
 end
