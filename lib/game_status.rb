@@ -25,6 +25,7 @@ def full?(board)
   value == "X" || value == "O"
   return true
 end
+end
   return false
 end
   
