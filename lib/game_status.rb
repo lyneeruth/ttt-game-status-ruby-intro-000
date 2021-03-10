@@ -44,5 +44,5 @@ def winner(board)
   if board[winning_space] == "X"
     return "X"
   end
-  return "0"
+  return "O"
 end
