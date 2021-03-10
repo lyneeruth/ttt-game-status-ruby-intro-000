@@ -24,4 +24,11 @@ def full?(board)
   full_value = board.all? { |value| value == "X" || value == "O"}
   return full_value
 end
+
+def draw?(board)
+  if (!won?(board) && !full?(board))
+    return true 
+  end
+  return false
+end
   
